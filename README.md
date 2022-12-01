@@ -5,5 +5,5 @@ This repository includes a [wasmCloud interface](./advent-of-code-interface/) an
 To generate a solution project of your own, install [the wasmCloud shell (wash)](https://wasmcloud.dev/overview/installation/) and then run:
 
 ```
-wash new actor --git https://github.com/brooksmtownsend/
+wash new actor --git https://github.com/brooksmtownsend/wasmcloud-advent-of-code-2022 --subfolder template day2
 ```
