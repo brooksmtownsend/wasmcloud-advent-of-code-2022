@@ -7,3 +7,5 @@ To generate a solution project of your own, install [the wasmCloud shell (wash)]
 ```
 wash new actor --git https://github.com/brooksmtownsend/wasmcloud-advent-of-code-2022 --subfolder template
 ```
+
+This project will eventually contain full solutions and setup code for how to run them, but in the interest of not spoiling the event they will stay local on my laptop until Advent of Code ends.
