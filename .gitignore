@@ -1,0 +1,8 @@
+host_config.json
+
+/target
+target/
+/target/
+
+// Ignoring solutions until after AOC ends
+day*/

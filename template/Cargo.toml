@@ -1,0 +1,21 @@
+[package]
+name = "dayX"
+version = "0.1.0"
+authors = [ "Brooks Townsend" ]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "day_x"
+
+[dependencies]
+futures = "0.3"
+wasmbus-rpc = "0.11"
+# TODO: published interface
+aoc-solution = { path = "../aoc-solution/rust" }
+
+[profile.release]
+# Optimize for small code size
+lto = true
+opt-level = "s"
+strip = true
