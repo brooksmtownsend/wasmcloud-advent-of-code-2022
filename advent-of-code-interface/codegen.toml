@@ -9,7 +9,7 @@
 # The namespaces(s) that will be generated for this library are indicated
 # in the per-language file settings later in this file.
 [[models]]
-path = "aocsolution.smithy"
+path = "adventofcode.smithy"
 
 [[models]]
 # Location of dependencies may be either a path to a directory, or a url prefix
@@ -63,5 +63,5 @@ output_dir = "rust"
 # and importing each of them into src/lib.rs
 
 [[rust.files]]
-path = "src/aocsolution.rs"
-namespace = "org.example.interfaces.aocsolution"
+path = "src/adventofcode.rs"
+namespace = "org.example.interfaces.adventofcode"

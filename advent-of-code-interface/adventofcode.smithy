@@ -1,16 +1,16 @@
-// aocsolution.smithy
+// adventofcode.smithy
 //
 
 // Tell the code generator how to reference symbols defined in this namespace
-metadata package = [ { namespace: "org.example.interfaces.aocsolution", crate: "aoc_solution" } ]
+metadata package = [ { namespace: "org.example.interfaces.adventofcode", crate: "wasmcloud_advent_of_code_interface" } ]
 
-namespace org.example.interfaces.aocsolution
+namespace org.example.interfaces.adventofcode
 
 use org.wasmcloud.model#wasmbus
 
-/// Description of Aocsolution service
+/// Description of AdventOfCode service
 @wasmbus( actorReceive: true )
-service Aocsolution {
+service AdventOfCode {
   version: "0.1",
   operations: [ PartOne, PartTwo]
 }

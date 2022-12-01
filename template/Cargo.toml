@@ -1,18 +1,18 @@
 [package]
-name = "dayX"
+name = "{{project-name}}"
 version = "0.1.0"
-authors = [ "Brooks Townsend" ]
+authors = [ "" ]
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
-name = "day_x"
+name = "{{to_snake_case project-name}}"
 
 [dependencies]
 futures = "0.3"
 wasmbus-rpc = "0.11"
 # TODO: published interface
-aoc-solution = { path = "../aoc-solution/rust" }
+wasmcloud-advent-of-code-interface = { path = "../advent-of-code-interface/rust" }
 
 [profile.release]
 # Optimize for small code size

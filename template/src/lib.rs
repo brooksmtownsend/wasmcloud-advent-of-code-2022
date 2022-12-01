@@ -1,4 +1,4 @@
-use aoc_solution::{Aocsolution, AocsolutionReceiver};
+use wasmcloud_advent_of_code_interface::{AdventOfCode, AdventOfCodeReceiver};
 use wasmbus_rpc::actor::prelude::*;
 
 // TODO: Fill input text files with the input from Advent of Code
@@ -6,11 +6,11 @@ const INPUT_PART_1: &str = include_str!("../input_part_1.txt");
 const INPUT_PART_2: &str = include_str!("../input_part_2.txt");
 
 #[derive(Debug, Default, Actor, HealthResponder)]
-#[services(Actor, Aocsolution)]
+#[services(Actor, AdventOfCode)]
 struct Day1Actor {}
 
 #[async_trait]
-impl Aocsolution for Day1Actor {
+impl AdventOfCode for Day1Actor {
     async fn part_one(&self, _ctx: &Context) -> RpcResult<String> {
         Ok(format!("Solution: {}", part_1()))
     }
